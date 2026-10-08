@@ -29,6 +29,7 @@ body {
     justify-items: center;
     grid-template-rows: auto 1fr auto;
     font-family: Roboto, 'Times New Roman', Times, serif;
+    border: 1px solid red;
 }
 
 /***** HEADER START *****/
@@ -145,6 +146,53 @@ main {
 
 /***** MAIN END *****/
 
+/***** FOOTER START *****/
+
+footer {
+    background-color: rgb(15, 164, 209);
+    color: white;
+    width: 100%;
+}
+
+.contact-section {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    padding-bottom: 40px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    padding: 10px;
+    gap: 20px;
+}
+
+.contact-grid {
+    align-items: left;
+}
+
+.footer-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 30px);
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-picture-div {
+    width: 100%;
+    height: auto;
+}
+
+.footer-picture img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/***** FOOTER END *****/
+
 /***** MISCELLANEOUS START *****/
 
 h1, h2 {
@@ -155,14 +203,6 @@ h1, h2 {
     filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(150%);
 }
 
-.project-placeholder {
-    height: 250px;
-    width: 250px;
-    background-color: purple;
-}
 
-.project {
-    width: 100%;
-}
 
 /***** MISCELLANEOUS END *****/
