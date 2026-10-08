@@ -8,20 +8,25 @@
 </head>
 <body>
     <header>
-        <picture>
-            <source 
-                srcset="img/header_photo_large.jpg"
-                media="(min-width: 1024px)"
-            />
-            <source 
-                srcset="img/header_photo_medium.jpg"
-                media="(min-width: 480px)"
-            />
-            <img 
-                src="img/header_photo_small.jpg" 
-                alt="Cat headshot"
-            >
-        </picture>
+        <div class="header-picture-div">
+            <picture class="header-picture">
+                <source 
+                    srcset="img/header_photo_large.jpg"
+                    media="(min-width: 1024px)"
+                />
+                <source 
+                    srcset="img/header_photo_medium.jpg"
+                    media="(min-width: 480px)"
+                />
+                <img 
+                    src="img/header_photo_small.jpg" 
+                    alt="Cat headshot"
+                >
+            </picture>
+            <p class="header-name">
+                Mr. Cat
+            </p>
+        </div>
         <h1>About me</h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -41,32 +46,32 @@
             <h1>My Work</h1>
             <div class="projects">
                 <article>
-                    <div class="project-image-placeholder"></div>
+                    <div class="project-placeholder"></div>
 
                 </article>
 
                 <article>
-                    <div class="project-image-placeholder"></div>
+                    <div class="project-placeholder"></div>
 
                 </article>
 
                 <article>
-                    <div class="project-image-placeholder"></div>
+                    <div class="project-placeholder"></div>
 
                 </article>
 
                 <article>
-                    <div class="project-image-placeholder"></div>
+                    <div class="project-placeholder"></div>
 
                 </article>
 
                 <article>
-                    <div class="project-image-placeholder"></div>
+                    <div class="project-placeholder"></div>
 
                 </article>
 
                 <article>
-                    <div class="project-image-placeholder"></div>
+                    <div class="project-placeholder"></div>
 
                 </article>
             </div>
@@ -85,6 +90,9 @@
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" width="30px" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg" width="30px" />
             </nav>
+            <p>
+                <img src="img/footer_photo.jpg" alt="" width="250px">
+            </p>
         </section>
     </footer>
 </body>
