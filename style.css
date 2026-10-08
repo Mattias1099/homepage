@@ -29,16 +29,14 @@ body {
     justify-items: center;
     grid-template-rows: auto 1fr auto;
     font-family: Roboto, 'Times New Roman', Times, serif;
-    padding: 30px;
 }
 
-h1 {
-    font-family: 'Playfair Display';
-}
+/***** HEADER START *****/
 
 header {
     display: grid;
     justify-items: center;
+    padding: 30px;
 }
 
 .header-picture-div {
@@ -59,6 +57,7 @@ header {
     text-align: center;
     width: 100%;
     color: white;
+    font-family: 'Playfair Display';
 }
 
 .header-about-me-section {
@@ -70,6 +69,7 @@ header {
 
 .header-about-me-section p {
     padding: 10px 0px;
+    line-height: 1.5rem;
 }
 
 .header-nav {
@@ -78,9 +78,91 @@ header {
     gap: 15px;
 }
 
+/***** HEADER END *****/
+
+/***** MAIN START *****/
+
+main {
+    width: 100%;
+    padding: 30px;
+}
+
+.project {
+    border: 1px solid black;
+}
+
+.projects {
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 50px;
+}
+
+.projects h1 {
+    padding-bottom: 20px;
+}
+
+.project .project-image {
+    width: 100%;
+}
+
+.project-content {
+    display: grid;
+    padding: 5px 15px;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "project-content-name-icons"
+    "project-content-description";
+}
+
+.project-content-name-icons {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.project-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 20px);
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+}
+
+.project-content-description {
+    text-align: start;
+    padding: 15px 0px 50px 0px;
+}
+
+.project-name {
+    text-align: start;
+    padding-left: 15px;
+    font-size: 1.3rem;
+}
+
+/***** MAIN END *****/
+
+/***** MISCELLANEOUS START *****/
+
+h1, h2 {
+    font-family: 'Playfair Display';
+}
+
+.nav-icons {
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(150%);
+}
 
 .project-placeholder {
     height: 250px;
     width: 250px;
     background-color: purple;
 }
+
+.project {
+    width: 100%;
+}
+
+/***** MISCELLANEOUS END *****/
