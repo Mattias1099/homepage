@@ -33,24 +33,6 @@ body {
 
 /***** HEADER START *****/
 
-
-@media (max-width: 479px) {
-    .header-box {
-        display: grid;
-        justify-items: center;
-        padding: 30px;
-    }
-
-    .header-text-content {
-        display: grid;
-    }
-
-    .header-text-content h1 {
-        justify-self: center;
-        padding-top: 30px;
-    }
-}
-
 .header-picture-div {
     position: relative;
     width: 100%;
@@ -101,6 +83,7 @@ main {
 
 .project {
     border: 1px solid black;
+    max-width: 350px;
 }
 
 .projects {
@@ -109,8 +92,8 @@ main {
 
 .projects-grid {
     display: grid;
-    grid-template-rows: repeat(6, 1fr);
     gap: 50px;
+    justify-items: center;
 }
 
 .projects h1 {
@@ -202,6 +185,27 @@ footer {
 
 /***** FOOTER END *****/
 
+@media (max-width: 479px) {
+    .header-box {
+        display: grid;
+        justify-items: center;
+        padding: 30px;
+    }
+
+    .header-text-content {
+        display: grid;
+    }
+
+    .header-text-content h1 {
+        justify-self: center;
+        padding-top: 30px;
+    }
+
+    .projects-grid {
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+
 @media (min-width: 480px) {
     .header-picture-div {
         position: relative;
@@ -236,6 +240,14 @@ footer {
         font-size: 3rem;
         color: black;
         text-align: end;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    main {
+        max-width: 1209px;
     }
 
 }
