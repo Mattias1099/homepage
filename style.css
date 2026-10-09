@@ -302,12 +302,12 @@ h1, h2 {
 
 .blue-background {
     width: 200%;
-    height: 600px;
+    height: 2000px;
     background-color: rgb(15, 164, 209);
     position: absolute;
-    top: -200px;
+    top: -1600px;
     transform: rotate(-7deg);
-    z-index: -5;
+    z-index: -1;
 }
 
 /***** MISCELLANEOUS END *****/
