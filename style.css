@@ -185,6 +185,22 @@ footer {
     height: 100%;
 }
 
+.contact-information {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.contact-information div {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-information img {
+    filter: invert(100%);
+}
+
 /***** FOOTER END *****/
 
 @media (max-width: 479px) {
@@ -283,7 +299,6 @@ footer {
 }
 
 @media (width >= 480px) and (width <= 1023px) {
-
     .header-name {
         top: 0px;
         right: -125px;
@@ -291,7 +306,6 @@ footer {
         color: white;
         text-align: end;
     }
-
 }
 
 /***** MISCELLANEOUS START *****/
