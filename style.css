@@ -33,10 +33,22 @@ body {
 
 /***** HEADER START *****/
 
-header {
-    display: grid;
-    justify-items: center;
-    padding: 30px;
+
+@media (max-width: 479px) {
+    .header-box {
+        display: grid;
+        justify-items: center;
+        padding: 30px;
+    }
+
+    .header-text-content {
+        display: grid;
+    }
+
+    .header-text-content h1 {
+        justify-self: center;
+        padding-top: 30px;
+    }
 }
 
 .header-picture-div {
@@ -67,7 +79,7 @@ header {
     padding: 30px 0px;
 }
 
-.header-about-me-section p {
+.header-text-content p {
     padding: 10px 0px;
     line-height: 1.5rem;
 }
@@ -188,9 +200,37 @@ footer {
     height: 100%;
 }
 
-
-
 /***** FOOTER END *****/
+
+@media (min-width: 480px) {
+    .header-picture-div {
+        position: static;
+        margin-top: -80px;
+        margin-left: -60px;
+        margin-right: 20px;
+        margin-bottom: 5px;
+        float: left;
+        width: clamp(200px, 65%, 400px);
+    }
+
+    .header-box {
+        margin: 100px 50px 50px 50px;
+        padding: 30px;
+        max-width: 1000px;
+        background: yellow;
+    }
+
+    .header-nav {
+        display: grid;
+        justify-content: end;
+        
+    }
+
+    .header-text-content {
+        padding-top: 40px;
+    }
+
+}
 
 /***** MISCELLANEOUS START *****/
 
@@ -201,7 +241,5 @@ h1, h2 {
 .nav-icons {
     filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(150%);
 }
-
-
 
 /***** MISCELLANEOUS END *****/

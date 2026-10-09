@@ -8,41 +8,43 @@
 </head>
 <body>
     <header>
-        <div class="header-picture-div">
-            <picture class="header-picture">
-                <source 
-                    srcset="img/header_photo_large.jpg"
-                    media="(min-width: 1024px)"
-                />
-                <source 
-                    srcset="img/header_photo_medium.jpg"
-                    media="(min-width: 480px)"
-                />
-                <img 
-                    srcset="img/header_photo_mobile_highres.jpg 2x"
-                    src="img/header_photo_mobile_lowres.jpg" 
-                    alt="Cat headshot"
-                >
-            </picture>
-            <p class="header-name">
-                Mr. Cat
-            </p>
-        </div>
-        <section class="header-about-me-section">
-            <h1>About me</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-                velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
+        <div class="header-box">
+            <div class="header-picture-div">
+                <picture class="header-picture">
+                    <source 
+                        srcset="img/header_photo_large.jpg"
+                        media="(min-width: 1024px)"
+                    />
+                    <source 
+                        srcset="img/header_photo_medium.jpg"
+                        media="(min-width: 480px)"
+                    />
+                    <img 
+                        srcset="img/header_photo_mobile_highres.jpg 2x"
+                        src="img/header_photo_mobile_lowres.jpg" 
+                        alt="Cat headshot"
+                    >
+                </picture>
+                <p class="header-name">
+                    Mr. Cat
+                </p>
+            </div>
+            <div class="header-text-content">
+                <h1>About me</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                    velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div>
             <nav class="header-nav nav-icons">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30px" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" width="30px" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg" width="30px" />
             </nav>
-        </section>
+        </div>    
     </header>
     <main>
         <section class="projects">
