@@ -29,7 +29,6 @@ body {
     justify-items: center;
     grid-template-rows: auto 1fr auto;
     font-family: Roboto, 'Times New Roman', Times, serif;
-    border: 1px solid red;
 }
 
 /***** HEADER START *****/
@@ -85,7 +84,7 @@ header {
 
 main {
     width: 100%;
-    padding: 30px;
+    padding: 30px 30px 120px 30px;
 }
 
 .project {
